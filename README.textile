@@ -1,0 +1,23 @@
+h1. jQuery Quotate
+
+|*By:*||Mike Green|
+|*Copyright:*||Copyright (C) 2009, Mike Green. See LICENSE for details|
+
+h2. About
+
+jQuery Quotate is a plugin for "jQuery":http://jquery.com that displays a randomly selected quote in a @div@ or other block element. It can be customized to rotate the quote at a set interval or just show one quote every time the page reloads.
+
+h2. Usage
+
+<pre>
+	$(document).ready(function() {
+		$(".quote_element").quotate({
+			type: "json", // accepts "json", "xml", or "list"
+			quoteFile: "/quotes.json", // the file with the list of quotes if type is "json" or "xml" 
+			// otherwise give an array of objects to quoteList
+			// i.e. quoteList: [{quote:'quote', author:'Joe Somebody'}, {quote:'foo', author:'Bob Bar'}],
+			interval: 10 // how often to rotate quotes, in seconds
+		});
+	})
+</pre>
+
