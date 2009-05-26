@@ -1,5 +1,7 @@
 h1. jQuery Quotate
 
+Quote Rotator
+
 |*By:*||Mike Green|
 |*Copyright:*||Copyright (C) 2009, Mike Green. See LICENSE for details|
 
@@ -20,4 +22,14 @@ h2. Usage
 		});
 	})
 </pre>
+
+h2. Configuration
+
+You can pass the @quotate()@ method an object with several configuration values. Here's a rundown:
+
+|*Key*||*Values/Info*|
+|*type:*||either "json", "xml", or "list"|
+|*quoteFile:*||the path to a JSON or XML file with the quotes to rotate|
+|*quoteList:*||If you entered "list" in the type: field, this is the list of quotes, as an array of Javascript objects. i.e. @[{author:"R.A. Heinlein", quote:"Specialization is for insects."}, {author:"Gregory House", quote:"Sign this so I can take out a piece of your brain."}]@|
+|*interval:*||The interval, in seconds, between quote changes|
 
